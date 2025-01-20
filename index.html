@@ -7,10 +7,28 @@
   <title>Hello World</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
-<body>
- <button onclick="test1()">Run test1</button>
+<body  class="main.page">
+<button onclick="test1()">Run test1</button>
 <button onclick="test2()">Run test2</button>
 <button onclick="test3()">Run test3</button>
+
+
+<script>
+  document.body.classList.add('article');
+
+  const buttons = document.querySelectorAll('button');
+
+  buttons.forEach(button => {
+    button.style.backgroundColor = '#4CAF50'; 
+    button.style.color = 'white'; 
+    button.style.borderRadius = '5px';
+
+   
+  });
+</script>
+
+
+
 
 </body>
 </html>
