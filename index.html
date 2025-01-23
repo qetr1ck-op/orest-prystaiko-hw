@@ -1,34 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <script src="0802.js"></script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
-</head>
-<body  class="main.page">
-<button onclick="test1()">Run test1</button>
-<button onclick="test2()">Run test2</button>
-<button onclick="test3()">Run test3</button>
+  <head>
+    <script src="0802.js" defer></script>
 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World</title>
+    <link href="/style.css" rel="stylesheet" />
+  </head>
+  <body class="main.page">
+    <button onclick="test1()">Run test1</button>
+    <button onclick="test2()">Run test2</button>
+    <button onclick="test3()">Run test3</button>
 
-<script>
-  document.body.classList.add('article');
+    <script>
+      document.body.classList.add("article");
 
-  const buttons = document.querySelectorAll('button');
+      const buttons = document.querySelectorAll("button");
 
-  buttons.forEach(button => {
-    button.style.backgroundColor = '#4CAF50'; 
-    button.style.color = 'white'; 
-    button.style.borderRadius = '5px';
-
-   
-  });
-</script>
-
-
-
-
-</body>
+      buttons.forEach((button) => {
+        button.style.backgroundColor = "#4CAF50";
+        button.style.color = "white";
+        button.style.borderRadius = "5px";
+      });
+    </script>
+  </body>
 </html>
