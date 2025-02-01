@@ -8,6 +8,7 @@ function loadScript(src) {
           resolve(script);
       };
       script.onerror = () => reject(new Error(`Script load error for ${src}`));
+<<<<<<< HEAD
 
       document.head.append(script);
   });
